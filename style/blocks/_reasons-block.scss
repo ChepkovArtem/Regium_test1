@@ -1,0 +1,38 @@
+.reasons{
+    &__container{
+        margin-top: 70px;
+    }
+    &__title{
+        font-size: 40px;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: auto;
+        @include tablets{
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+    &__list{
+        margin-top: 60px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        .reasons__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .reasons__img{
+                height: 367px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            .reasons__text{
+                text-align: center;
+                margin-top: 40px;
+                line-height: 1.2;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.callback{
+    background: url('../imgs/callback-bg.png') center bottom no-repeat;
+    background-size: cover;
+    padding: 150px 0 10px;
+    margin-top: 60px;
+    color: white;
+    @include tablets{
+        padding: 100px 0 10px;
+    }
+    &__form{
+        display: flex;
+        justify-content: space-around;
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+        }
+        .callback__description{
+            width: 40%;
+            font-size: 28px;
+            text-align: left;
+            @include hdscreen{
+                font-size: 24px;
+            }
+            @include tablets{
+                width: 90%;
+            }
+        }
+        .callback__panel{
+            width: max-content;
+            @include tablets{
+                width: 90%;
+                margin-top: 20px;
+            }
+            .callback__email-field{
+                width: calc(100% - 56px);
+                padding: 23px 28px;
+                border-radius: 10px;
+                outline: none;
+                border: none;
+                font-size: 16px;
+            }
+            .callback__agree{
+                display: flex;
+                justify-content: flex-start;
+                font-size: 14px;
+                margin-top: 20px;
+                &-link{
+                    position: relative;
+                    color: white;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        @include tablets{
+            margin-top: 100px;
+        }
+        &__site{
+            text-decoration: none;
+            margin-left: 2px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}

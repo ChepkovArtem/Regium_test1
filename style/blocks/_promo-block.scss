@@ -1,0 +1,63 @@
+.promo{
+    background-color: $pink;
+    color: white;
+    overflow: hidden;
+    &__container{
+        padding: 65px 0 115px;
+        z-index: 10;
+        @include phones{
+            padding-bottom: 40px;
+        }
+    } 
+    &__logo{
+        z-index: 10;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .logo__image{
+            width: 28px;
+            height: 42px;
+        }
+        .logo__text{
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            .logo__title{
+                font-size: 20px;
+                line-height: 1.2;
+            }
+            .logo__subtitle{
+                margin-top: 5px;
+                line-height: 1.2;
+                font-size: 8px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+    }
+    &__title{
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-top: 94px;
+        h1{
+            line-height: 1.2;
+        }
+        @include tablets{
+            text-align: center;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+    &__subtitle{
+        font-size: 18px;
+        line-height: 1.2;
+        margin-top: 32px;
+        @include tablets{
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+}
+
+  
+  

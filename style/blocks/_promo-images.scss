@@ -1,0 +1,68 @@
+.promo{
+    z-index: 0;
+    position: relative;
+    background-color: $pink;
+    .promo__bg-image{
+        position: absolute;
+        z-index: -1;
+        &.images__woman{
+            right: 20%;
+            @include hdscreen{
+                right: 5%;
+            }
+            @include tablets{
+                height: 100%;
+                top: 30%;
+                left: 30%;
+            }
+            @include  phones{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &.images__veg--bottom{
+            bottom: -85%;
+            left: 10%;
+            @include tablets{
+                height: 100%;
+                top: 50%;
+                left: 0;
+            }
+        }
+        &.images__veg--top-right{
+            right: -30%;
+            top: -180%;
+            @include hdscreen{
+                right: -70%;
+            }
+            @include tablets{
+                height: 100%;
+                right: -40%;
+                top: -50%;
+            }
+        }
+        &.images__veg--left{
+            left: -45%;
+            top: -10%;
+            @include hdscreen{
+                left: -85%;
+            }
+            @include tablets{
+                height: 100%;
+                left: -35%;
+                top: -15%;
+            }
+        }
+        &.images__veg--bg{
+            top: 20%;
+            left: 15%;
+            transform: scale(0.9) rotate(130deg);
+            @include tablets{
+                height: 100%;
+                transform: scale(1);
+                left: 1%;
+                top: 30%;
+            }
+        }
+    }
+}

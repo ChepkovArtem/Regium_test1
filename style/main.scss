@@ -1,0 +1,22 @@
+$pink:#ea7f8c;
+$yellow:#ffdd0c;
+$gray:#909090;
+$grayLogo:#d4d4d4;
+$main:#242424;
+$gradFrom:#12bc82;
+$gradTo:#bfdf2c;
+$gradTo:linear-gradient(27deg, rgba(18,188,130,1) 0%, rgba(191,223,44,1) 100%);
+
+@import "./style/main/media";
+@import "./style/main/layout";
+
+@import "./style/blocks/promo-block";
+@import "./style/blocks/advice-block";
+@import "./style/blocks/reasons-block";
+@import "./style/blocks/advertisement-block";
+@import "./style/blocks/reviews-block";
+@import "./style/blocks/callback-block";
+@import "./style/blocks/promo-images";
+@import "./style/blocks/button";
+@import "./style/main/slick-theme";
+@import "./style/blocks/sliders";

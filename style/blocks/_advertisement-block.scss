@@ -1,0 +1,24 @@
+.advertisement{
+    position: relative;
+    background: url('../imgs/adv-bg.png') center bottom (15%) no-repeat;
+    background-size: cover;
+    color: white;
+    &__filter{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #301010;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    &__container{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__tittle{
+        margin-top: 65px;
+        text-align: center;
+    }
+}

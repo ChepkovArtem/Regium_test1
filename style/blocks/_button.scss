@@ -1,0 +1,48 @@
+.button{
+    background: $gradTo;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    .button__title{
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 1.2;
+        text-decoration: none;
+        color: white;
+    }
+    &.promo__button{
+        padding: 27px 69px 23px;
+        margin-top: 40px;
+        @include tablets{
+            margin-top: 150px;
+            padding: 27px 0 23px;
+            width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include phones{
+            margin-top: 80px;
+        }
+    }
+    &.advertisement__button{
+        margin: 45px 0;
+        padding: 24px 40px;
+        .button__subtitle, .button__title{
+            font-size: 18px;
+        }
+    }
+    &.callback__button{
+        padding: 32px 138px;
+        margin-top: 20px;
+        @include tablets{
+            width: 100%;
+        }
+    }
+
+}
+
+
+  
+  

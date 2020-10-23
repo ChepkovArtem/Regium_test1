@@ -1,0 +1,80 @@
+.reviews{
+    margin-top: 70px;
+    &__title{
+        font-size: 40px;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: auto;
+        @include hdscreen{
+            text-align: center;
+        }
+        @include tablets{
+            font-size: 28px;
+        }
+    }
+    &__list{
+        margin-top: 60px;
+        .reviews__item{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            @include tablets{
+                align-items: center;
+            }
+            .reviews__textblock{
+                border: 1px solid $grayLogo;
+                border-radius: 10px;
+                width: 280px;
+                padding: 20px;
+                position: relative;
+                &::after{
+                    content: ' '; 
+                    position: absolute; 
+                    width: 0; 
+                    height: 0; 
+                    left: 31px; 
+                    bottom: -22px;
+                    border: 20px solid; 
+                    border-color: #fff transparent transparent #fff; 
+                }
+                &::before{
+                    content: ' '; 
+                    position: absolute; 
+                    width: 0; 
+                    height: 0; 
+                    left: 30px; 
+                    bottom: -24px;
+                    border: 12px solid; 
+                    border-color: $grayLogo transparent transparent $grayLogo; 
+                }
+            }
+            .reviews__author{
+                margin-top: 40px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                .reviews__avatar{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .reviews__info{
+                    margin-left: 20px;
+                    .reviews__name{
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                    .reviews__old{
+                        margin: 5px 0;
+                        font-size: 12px;
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}
